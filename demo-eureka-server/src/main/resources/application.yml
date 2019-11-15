@@ -12,6 +12,10 @@ eureka:
 spring:
   application:
     name: demo-eureka-server
+  security:
+    user:
+      name: ${spring.application.name}
+      password: ${spring.application.name}
 
 ---
 spring:
